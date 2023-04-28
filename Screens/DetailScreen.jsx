@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-around",
     backgroundColor: "#fff",
-    borderRadius: "50",
+    borderRadius: 50,
   },
   image: {
     width: 100,

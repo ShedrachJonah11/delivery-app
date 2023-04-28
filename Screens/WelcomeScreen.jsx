@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   View,
   StyleSheet,
+  StatusBar,
 } from "react-native";
 import colors from "../config/Restaurant/colors.js";
 import SPACING from "../config/SPACING.js";
@@ -78,5 +79,12 @@ const WelcomeScreen = () => {
     </ImageBackground>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+  },
+});
 
 export default WelcomeScreen;
